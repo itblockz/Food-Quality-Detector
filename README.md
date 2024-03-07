@@ -3,7 +3,7 @@
 
 ## Description
 
-Developed for the FundsRoom selection process, the Food Quality Detector is a cutting-edge, web-based application aimed at enhancing customer trust and satisfaction within the hyperlocal food delivery market. Utilizing a Convolutional Neural Network (CNN) model built with TensorFlow, this AI-powered tool efficiently addresses food quality complaints by allowing users to upload images of their food for real-time quality assessment. This initiative not only streamlines the complaint resolution process but also provides valuable feedback to partner restaurants, ultimately reducing churn and fostering a more trustworthy service environment. The frontend is developed using React, offering a user-friendly interface, while the backend is powered by Django REST Framework to handle image processing and prediction.
+The Food Quality Detector is a cutting-edge, web-based application aimed at enhancing customer trust and satisfaction within the hyperlocal food delivery market. Utilizing a Convolutional Neural Network (CNN) model built with TensorFlow, this AI-powered tool efficiently addresses food quality complaints by allowing users to upload images of their food for real-time quality assessment. This initiative not only streamlines the complaint resolution process but also provides valuable feedback to partner restaurants, ultimately reducing churn and fostering a more trustworthy service environment. The frontend is developed using React, offering a user-friendly interface, while the backend is powered by Django REST Framework to handle image processing and prediction.
 
 ## Features
 
