@@ -6,6 +6,7 @@ from django.http import JsonResponse
 from rest_framework.decorators import api_view
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import img_to_array
+from tensorflow.keras.applications.vgg19 import preprocess_input
 from PIL import Image
 import numpy as np
 from io import BytesIO
@@ -26,11 +27,13 @@ def predict_image(request):
     # Converting image to RGB format
     image = image.convert('RGB')
     
-    image = image.resize((180, 180))  
+    image = image.resize((224, 224))  
     img_array = img_to_array(image)
-    img_array = np.expand_dims(img_array, axis=0)  
+    img_array = np.expand_dims(img_array, axis=0)
+    img_array = preprocess_input(img_array)
 
     prediction = model.predict(img_array)
-    result = 'fresh' if prediction[0][0] > 0.7 else 'rotten'  
+    predicted_index = np.argmax(prediction[0])
+    result = 'fresh' if predicted_index < 6 else 'rotten'  
     
     return JsonResponse({'status': result})

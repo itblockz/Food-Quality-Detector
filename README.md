@@ -93,6 +93,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Acknowledgments
 
 -   Special thanks to [Fresh and Rotten Classification dataset](https://www.kaggle.com/datasets/swoyam2609/fresh-and-stale-classification) from Kaggle for providing the dataset used to train the model.
-- This project is developed as part of the selection process for the FundsRoom interview round, aiming to showcase innovative solutions in automated food quality control for the hyperlocal business model.
+-   The model was trained using the approach described in [this Kaggle notebook](https://www.kaggle.com/code/itblockz/fresh-and-stale-fruit-detector-cnn), which provided valuable insights into food quality classification.
+-   This project is developed as part of the selection process for the FundsRoom interview round, aiming to showcase innovative solutions in automated food quality control for the hyperlocal business model.
 
 ----------
